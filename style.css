@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.face-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+.face{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #32a852;
+	position: relative;
+}
+.mouth{
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90px;
+	height: 20px;
+	background-color: #56785f;
+	transition: .2s;
+}
+.face:hover .mouth{
+	height: 50px;
+	bottom: 50px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	background-color: #56785f;
+}
+.sights{
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.sight{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin: 20px;
+	background-color: white;
+	position: relative;
+	border: 4px solid black;
+}
+.sight:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: black;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+/* parallax effect */
+.para{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: black;
+	border-top: 2px solid white;
+}
+.para h1{
+	color: white;
+	font-size: 60px;
+}
+.para img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
